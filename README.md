@@ -32,6 +32,15 @@ A lightweight Linux desktop application for posting to X (Twitter) without distr
 ## Configuration
 
 1.  **API Keys**: You need a valid X Developer Account with Write permissions.
+    *   Go to the [X Developer Portal](https://developer.twitter.com/en/portal/dashboard).
+    *   Create a **Project** and an **App**.
+    *   In your App settings, go to **User authentication settings** and click **Edit**.
+        *   **App permissions**: Select **Read and Write**.
+        *   **Type of App**: Select **Web App, Automated App or Bot**.
+        *   **App info**: Set **Callback URI** and **Website URL** to `http://localhost` (required fields, but not used by this app).
+        *   Save settings.
+    *   Go to the **Keys and Tokens** tab.
+    *   Regenerate **Consumer Keys** (API Key & Secret) and **Authentication Tokens** (Access Token & Secret) to ensure they have the updated permissions.
 2.  **Environment Variables**:
     Copy the example environment file:
     ```bash
